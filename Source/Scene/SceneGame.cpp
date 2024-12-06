@@ -1,22 +1,22 @@
 #include "System/Graphics.h"
 #include "SceneGame.h"
+#include "../imgui-docking/imgui.h"
 
-// ‰Šú‰»
 void SceneGame::Initialize()
 {
+
 }
 
-// I—¹‰»
 void SceneGame::Finalize()
 {
+
 }
 
-// XVˆ—
 void SceneGame::Update(float elapsedTime)
 {
+
 }
 
-// •`‰æˆ—
 void SceneGame::Render()
 {
 	Graphics& graphics = Graphics::Instance();
@@ -68,8 +68,9 @@ void SceneGame::Render()
 	}
 }
 
-// GUI•`‰æ
 void SceneGame::DrawGUI()
 {
+	ImGui::Begin("Game");
 
+	ImGui::End();
 }
